@@ -82,8 +82,7 @@ public class Main {
                     convertedInt1 = baseConverter(int1Array, inputBase);
                     convertedInt2 = baseConverter(int2Array, inputBase);
                 if (operator != '%') {
-                    int answer = calculation(convertedInt1, convertedInt2, operator);
-                    System.out.println(outputBaseConverter(answer, outputBase));
+                    System.out.println(outputBaseConverter(calculation(convertedInt1, convertedInt2, operator), outputBase));
                 } else {
                     System.out.println(outputBaseConverter(convertedInt1 / convertedInt2, outputBase) + "R" + outputBaseConverter(convertedInt1 % convertedInt2, outputBase));
                 }
